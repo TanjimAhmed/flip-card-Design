@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flip-card Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="card">
+		<div class="card__inner">
+			<div class="card__face card__face--front">
+                <h2>Click Here</h2>
+			</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+					<div class="card__header">
+						<img src="img.jpg" alt="" class="pp" />
+                        <h2>Card Header</h2>
+					</div>
+					<div class="card__body">
+                        <h3>Javascript Wizerd</h3>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam mollitia aperiam quidem, inventore excepturi cupiditate dolorem sit quas nisi veritatis?
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script type="text/javascript">
+     const card = document.querySelector('.card__inner');
+     card.addEventListener('click', ()=>{
+         card.classList.toggle('is_flipped')
+     })
+    </script>
+</body>
+</html>
